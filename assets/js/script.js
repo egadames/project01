@@ -47,8 +47,9 @@ function yelpApi(city) {
       $("#restaurantContent" + i).append(restName, restAddress, restRating, restPrice);
       $("#restaurantLink" + i).prepend(restLink);
     }
-});
+  });
 }
+
 // // Event handler for user clicking the select-artist button
 // $("#select-artist").on("click", function(event) {
 //   // Preventing the button from trying to submit the form
@@ -66,3 +67,5 @@ function yelpApi(city) {
 ticketmasterApi('oakland');
 // zomatoLocationApi('oakland');
 yelpApi('oakland');
+
+
