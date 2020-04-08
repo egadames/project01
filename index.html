@@ -7,14 +7,12 @@
     <title>project 1</title>
 
     <!-- custom css -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
 
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -31,19 +29,27 @@
     <h1 class='name'>What's the Move</h1>
 </header>
 <body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="https://lh3.googleusercontent.com/2zz7NM33iJnm1DqwYAMz3EEmS2MQEetBc8Ps8CMhq5KtRQA4r_7LFdWL6MWVlum-hydueQ=s85" class="brand-logo">WTM</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="">Eateries</a></li>
-        <li><a href="">Shows</a></li>
-        <li><a href="">Outdoors</a></li>
-        <li><a href="./assets/html/calendar.html">Itinerary</a></li>
-      </ul>
-    </div>
-  </nav>
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="https://lh3.googleusercontent.com/2zz7NM33iJnm1DqwYAMz3EEmS2MQEetBc8Ps8CMhq5KtRQA4r_7LFdWL6MWVlum-hydueQ=s85" class="brand-logo">WTM</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="" id="eatLink">Eateries</a></li>
+      <li><a href="" id="showLink">Shows</a></li>
+      <li><a href="" id="outdoorLink">Outdoors</a></li>
+      <li><a href="./assets/html/calendar.html">Itinerary</a></li>
+    </ul>
+  </div>
+</nav>
+
 <!-- Creates the Overall Grid -->
 <div class="mainContainer"> 
+  <h2 class="mission">The Goal</h2>
+  <p class="explain">Our mission here at Whats's the move, is to take the stress out finding great food and fun near you. WTM is perfect for the date you havent planned out thats been on weighing your mind. exploring a new a city, or just getting together with friends for a night out. Browse local events and save the ones you are interested in to your itinarary. Also, try out our auto-itinarary feature and we will generate a plan for you! </p>
+  <div class="searchContainer">
+    <input class="col-6" id='city'placeholder="Enter your City">
+    <button class="col-6 search" id='button' >Search</button>
+  </div>
 
 <!-- Row 1 -->
   <div class="row">
@@ -51,37 +57,27 @@
         <h2>Eateries</h2>
       </div>
   </div>
-  
-
-      
+        
   <div class='row'>
     <div class='col-3'>
       <div class="card">
         <div class="card-image" id=restaurantImg0>
-          <!-- <img src="images/sample-1.jpg">         -->
         </div>
           <div class="card-content" id=restaurantContent0>
-          <!-- <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p> -->
           </div>
             <div class="card-action" id=restaurantLink0>
-              <!-- <a href="#">This is a Link</a> -->
-              <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
-          </div>
-      </div>
-    </div>
+             <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
+         </div>
+     </div>
+  </div>
 
     <div class='col-3'>
       <div class="card">
         <div class="card-image" id=restaurantImg1>
-          <!-- <img src="images/sample-1.jpg">         -->
         </div>
           <div class="card-content" id=restaurantContent1>
-          <!-- <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p> -->
           </div>
           <div class="card-action" id=restaurantLink1>
-            <!-- <a href="#">This is a link</a> -->
             <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
           </div>
       </div>
@@ -89,14 +85,10 @@
     <div class='col-3'>
       <div class="card">
         <div class="card-image" id=restaurantImg2>
-          <!-- <img src="images/sample-1.jpg">         -->
         </div>
         <div class="card-content" id=restaurantContent2>
-          <!-- <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p> -->
           </div>
           <div class="card-action" id=restaurantLink2>
-              <!-- <a href="#">This is a link</a> -->
               <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
           </div>
       </div>
@@ -104,19 +96,16 @@
     <div class='col-3'>
       <div class="card">
         <div class="card-image" id=restaurantImg3>
-          <!-- <img src="images/sample-1.jpg">         -->
         </div>
         <div class="card-content" id=restaurantContent3>
-          <!-- <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p> -->
           </div>
           <div class="card-action" id=restaurantLink3>
-              <!-- <a href="#">This is a link</a> -->
               <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
           </div>
       </div>
     </div>
   </div>
+
 <!-- row 2 -->
 <div class="row">
   <div class="col-sm-12">
@@ -124,20 +113,14 @@
   </div>
 </div>
 
-
-  
 <div class='row'>
   <div class='col-3'>
     <div class="card">
       <div class="card-image" id=eventImg0>
-        <!-- <img src="images/sample-1.jpg">         -->
       </div>
         <div class="card-content" id=eventContent0>
-        <!-- <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p> -->
         </div>
           <div class="card-action" id=eventLink0>
-            <!-- <a href="#">This is a link</a> -->
             <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
         </div>
     </div>
@@ -145,14 +128,10 @@
   <div class='col-3'>
     <div class="card">
       <div class="card-image" id=eventImg1>
-        <!-- <img src="images/sample-1.jpg">         -->
       </div>
         <div class="card-content" id=eventContent1>
-        <!-- <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p> -->
         </div>
           <div class="card-action" id=eventLink1>
-            <!-- <a href="#">This is a link</a> -->
             <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
         </div>
     </div>
@@ -160,14 +139,10 @@
 <div class='col-3'>
   <div class="card">
     <div class="card-image" id=eventImg2>
-      <!-- <img src="images/sample-1.jpg">         -->
     </div>
       <div class="card-content" id=eventContent2>
-      <!-- <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p> -->
       </div>
         <div class="card-action" id=eventLink2>
-          <!-- <a href="#">This is a link</a> -->
           <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
       </div>
   </div>
@@ -175,19 +150,16 @@
 <div class='col-3'>
   <div class="card">
     <div class="card-image" id=eventImg3>
-      <!-- <img src="images/sample-1.jpg">         -->
     </div>
       <div class="card-content" id=eventContent3>
-      <!-- <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p> -->
       </div>
         <div class="card-action" id=eventLink3>
-          <!-- <a href="#">This is a link</a> -->
           <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
       </div>
   </div>
 </div>
 </div>
+
 <!-- row 3 -->
 <div class="row">
   <div class="col-sm-12">
@@ -195,83 +167,62 @@
   </div>
 </div>
 
-
-  
 <div class='row'>
-<div class='col-3'>
-  <div class="card">
-    <div class="card-image">
-      <img src="images/sample-1.jpg">        
+  <div class='col-3'>
+    <div class="card">
+      <div class="card-image" id=campImg0>
+      </div>
+        <div class="card-content" id=campContent0>
+        </div>
+          <div class="card-action" id=campLink0>
+            <button class="calendar">Add to Itinerary</button>
+        </div>
     </div>
-      <div class="card-content">
-      <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-      </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <button class="calendar">Add to Itinerary</button>
-      </div>
   </div>
-</div>
-<div class='col-3'>
-  <div class="card">
-    <div class="card-image">
-      <img src="images/sample-1.jpg">        
+  <div class='col-3'>
+    <div class="card">
+      <div class="card-image" id=campImg1>
+      </div>
+        <div class="card-content" id=campContent1>
+        </div>
+          <div class="card-action" id=campLink1>
+
+            <button class="calendar">Add to Itinerary</button>
+        </div>
     </div>
-      <div class="card-content">
-      <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-      </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
-      </div>
   </div>
-</div>
-<div class='col-3'>
-  <div class="card">
-    <div class="card-image">
-      <img src="images/sample-1.jpg">        
+  <div class='col-3'>
+    <div class="card">
+      <div class="card-image" id=campImg2>
+      </div>
+        <div class="card-content" id=campContent2>
+        </div>
+          <div class="card-action" id=campLink2>
+            <button class="calendar">Add to Itinerary</button>
+        </div>
     </div>
-      <div class="card-content">
-      <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-      </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
-      </div>
   </div>
-</div>
-<div class='col-3'>
-  <div class="card">
-    <div class="card-image">
-      <img src="images/sample-1.jpg">        
+  <div class='col-3'>
+    <div class="card">
+      <div class="card-image" id=campImg3>
+      </div>
+        <div class="card-content" id=campContent3></div>
+          <div class="card-action" id=campLink3>
+            <button class="calendar">Add to Itinerary</button>
+        </div>
     </div>
-      <div class="card-content">
-      <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-      </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="./assets/html/calendar.html" target="_blank"><button class="calendar">Add to Itinerary</button></a>
-      </div>
   </div>
-</div>
-</div>
+  </div>
 
+<footer id="footer">
+    Copyright (c) 2020 <a href="/"><strong></strong></a> All Rights Reserved.
+</footer>
 
-    <footer id="footer">
-        Copyright (c) 2020 <a href="/"><strong></strong></a> All Rights Reserved.
-      </footer>
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
+<!-- Link to my JS file -->
+<script src="./assets/js/script.js"></script>
 
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
-    <!-- Link to my JS file -->
-    <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
