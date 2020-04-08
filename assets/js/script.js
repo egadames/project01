@@ -1,7 +1,7 @@
 function ticketmasterApi(city) {
   
   $.ajax({
-    url: 'https://app.ticketmaster.com/discovery/v2/events.json?city='+city+'&apikey=9mKYubHvysymdsPpXe7Pq2sxKvRleMXG',
+    url: 'https://app.ticketmaster.com/discovery/v2/events.json?city='+city+'&apikey=9mKYubHvysymdsPpXe7Pq2sxKvRleMXG&sort=date,asc',
     method: "GET"
   }).then(function(response) {
     console.log(response)
@@ -9,10 +9,9 @@ function ticketmasterApi(city) {
       eventName    = $("<h5>").text(response._embedded.events[i].name);
       eventImg     = $("<img>").attr('src', response._embedded.events[i].images[0].url);
       eventDate    = $("<p>").text('Date: ' + moment(response._embedded.events[i].dates.start.localDate).format("MM-DD-YYYY"));
-      eventPrice   = $("<p>").text('Price Range: $' + response._embedded.events[i].priceRanges[0].min + ' - $' + response._embedded.events[i].priceRanges[0].max);
       eventLink    = $("<a>").attr('href', response._embedded.events[i].url).text("Ticketmaster Link");
       $("#eventImg" + i).append(eventImg);
-      $("#eventContent" + i).append(eventName, eventDate, eventPrice);
+      $("#eventContent" + i).append(eventName, eventDate);
       $("#eventLink" + i).prepend(eventLink);
     }
   });
@@ -69,22 +68,25 @@ function zomatoLocationApi(city) {
   }
 }
 
-// Event handler for user clicking the select-artist button
+// Event handler for user clicking the search button
 $("#button").on("click", function(event) {
  
-  // Storing the artist name
+  // Storing the city from the user
   var cityInput = $("#city").val().trim();
-  // Running the ticketmasterApi function(passing in the artist as an argument)
+
+  // Updating the links into the Navbar
   $("#eatLink").attr('href', `https://www.yelp.com/search?find_desc=&find_loc=${cityInput}&ns=1`);
 
   $("#showLink").attr('href', 'https://www.ticketmaster.com/');
 
   $("#outdoorLink").attr('href', 'https://www.hikingproject.com/search?q=' + cityInput);
 
+  // This activates the function to load the card
   ticketmasterApi(cityInput);
   zomatoLocationApi(cityInput);
   yelpApi(cityInput);
 
+  // This clears the search area
   $(".searchContainer").empty();
 
   });
