@@ -4,11 +4,11 @@ Sin Cho Chan, Erik Adames, David Hughey and Hunter Dean
 ### Location of URLs
 This is the link to the github repo:
 
-https://github.com/egadames/project01
+  * https://github.com/egadames/whatsNext
 
 This is the link to the live website:
 
-https://egadames.github.io/project01/
+  * https://egadames.github.io/project01/
 
 ###Project Planning: 
 Our website is the most convenient way to search events going on near you!
