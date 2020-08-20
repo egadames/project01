@@ -1,5 +1,6 @@
+import kjk  from '../assets'
+
 function ticketmasterApi(city) {
-  
   $.ajax({
     url: 'https://app.ticketmaster.com/discovery/v2/events.json?city='+city+'&apikey=9mKYubHvysymdsPpXe7Pq2sxKvRleMXG&sort=date,asc',
     method: "GET"
