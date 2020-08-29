@@ -10,7 +10,7 @@ This is the link to the live website:
 
  * https://egadames.github.io/whatsNext/
 
-###Project Planning: 
+### Project Planning: 
 Our website is the most convenient way to search events going on near you!
 Browse restaurants, concerts, and outdoor options all within your city or surrounding area. 
 
@@ -50,3 +50,4 @@ How were tasks and roles broken down and assigned?
 
 ![First Row](./assets/Img/Screenshot_first_row.JPG)
 ![First Row](./assets/Img/Screenshot_last_rows.JPG)
+
